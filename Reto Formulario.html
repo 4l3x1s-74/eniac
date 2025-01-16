@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Formulario de Registro</title>
+</head>
+
+<body>
+    <a href="./index.html">Inicio</a>
+    <h1>Formulario de Registro</h1>
+
+    <form action="#" method="post">
+        <h2>Datos Personales</h2>
+        <label for="nombre">Nombre</label>
+        <input type="text" id="nombre" name="nombre" required>
+        <label for="apellido">Apellido</label>
+        <input type="text" id="apellido" name="apellido" required>
+        <br>
+
+        <label for="email">Correo Electrónico:</label>
+        <input type="email" id="email" name="email" required placeholder="micorreo@ejemplo.com">
+        <br>
+
+        <label for="telefono">Teléfono:</label>
+        <input type="tel" id="telefono" name="telefono" placeholder="123 456789">
+        
+        <fieldset>
+          <legend><h2>Género</h2></legend>
+          <input type="radio" id="masculino" name="genero" value="Masculino" name="lista">
+          <label for="masculino">Masculino</label>               
+
+          <input type="radio" id="femenino" name="genero" value="Femenino" name="lista">
+          <label for="femenino">Femenino</label>
+        
+          <input type="radio" id="otro" name="genero" value="Otro" name="lista">
+          <label for="otro">Otro</label>
+        </fieldset>
+
+        <fieldset>
+          <legend><h2>Juego The Witcher Favorito</h2></legend>
+          <input type="checkbox" id="tw1" name="favorito" value="tw1">
+          <label for="tw1">The Witcher 1 (Enhanced Edition)</label>
+          <br>
+
+          <input type="checkbox" id="tw2" name="favorito" value="tw2">
+          <label for="tw2">The Witcher 2 (Assassins of Kings)</label>
+          <br>
+
+          <input type="checkbox" id="tw3" name="favorito" value="tw3">
+          <label for="tw3">The Witcher 3 (Wild Hunt)</label>
+          <br>
+        </fieldset>
+        
+        <h2>Comentarios</h2>
+        <textarea id="comentarios" name="comentarios" rows="5" cols="96"></textarea>
+        <br>
+      
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+
+</html>
