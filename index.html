@@ -2,24 +2,80 @@
 <html>
 
 <head>
+    <meta charset="UTF-8"
     <title>Trilogia del Videojuego The Witcher</title>
+    <style>
+        /*Estilo para el cuerp de la página */
+        body {
+            font-family: 'Verdana', sans-serif;
+            background-color: white;
+            margin: 0;
+            padding: 0;
+        } 
+        
+        .header {
+            background-color: #3b2121ec;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        header a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+
+        /* Estilo para el ecabezado h1*/
+        header h1 {
+            color: red;
+            font-size: 38px;
+            text-align: center;
+        }
+
+        /* Estilo para el contenedor principal */
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: white;
+            text-align: center;
+        }
+
+        /* Estilo para los parrafos */
+        p {
+            font-size: 18 px;
+            color: #333;
+        }
+
+        /* Estilo para los enlaces */
+
+        li, a {
+            color: red;
+        }
+
+    </style>
 </head>
 
 <body>
-    <h1>The Witcher (Trilogia del Videojuego)</h1>
-    <nav>
-        <ul>
-        <li><a href="./index.html">Inicio</a></li>
+    <header class="header">
+        <h1>The Witcher (Trilogia del Videojuego)</h1>
+        <nav>
+            <a href="./index.html">Inicio</a>
+            <a href="./galeria.html">Galería de Imagenes</a>
+            <a href="./multimedia.html">Multimedia</a>
+            <a href="./registro.html">Registro</a>
+        </nav>
+    </header>
+    <div class="container">
+        <h1>Contenido Principal</h1>
         <li><a href="./libro1.html">The Witcher 1</a></li>
         <li><a href="./libro2.html">The Witcher 2</a></li>
         <li><a href="./libro3.html">The Witcher 3</a></li>
-        <li><a href="./galeria.html">Galería de Imagenes</a></li>
-        <li><a href="./multimedia.html">Multimedia</a></li>
-        <li><a href="./registro.html">Formulario de Registro</a></li>    
-        </ul>
-        </nav>
-        <h2>The Witcher es una serie de videojuegos de rol de acción y fantasía desarrollados por CD Projekt RED, basados en la saga de novelas de Geralt de Rivia, escritas por el autor polaco "Andrzej Sapkowski"</h2>
+        <p>The Witcher es una serie de videojuegos de rol de acción y fantasía desarrollados por CD Projekt RED, basados
+            en
+            la saga de novelas de Geralt de Rivia, escritas por el autor polaco "Andrzej Sapkowski"
+        <p>
         <p><small>Tomado de Wikipedia®</small></p>
+    </div>
 </body>
-
 </html>
