@@ -18,31 +18,29 @@
             background-image: url('./imagenes/geralt.jpg');
             background-repeat: no-repeat;
             background-size: cover;
-            /* Ajusta la imagen dentro del contenedor */
-            /* background-position: center; */
-            /* position: fixed; */
             top: 0;
             left: 0;
             color: #fff;
             width: 100%;
-            height: 200px;
+            height: 250px;
             text-align: center;
-            padding: 50px 0;
+            padding: 60px 0;
             overflow: hidden;
             color: white;
         }
 
         /* Estilo para la barra de navegación */
         nav {
-            display: flex;
+            flex-direction: inline-block;
             justify-content: center;
-        }
+            padding: 10px;
+            text-align: flex;
+            }
 
         nav a {
-            color: hsl(0, 100%, 50%);
             font-size: 15px;
             font-weight: bold;
-            padding: 10px 20px;
+            padding: 10px;
             text-decoration: none;
         }
 
@@ -76,13 +74,7 @@
         }
 
         /* Estilo para el contenido principal */
-        /*.container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-            background-color: white;
-            text-align: center;
-        }*/
+        
         .main-content {
             padding: 120px 20px 20px;
             /* Espacio superior para compensar la barra de navegación fija */
@@ -145,6 +137,30 @@
             font-style: oblique;
             font-size: 10px;
         }
+
+        /* Estilos responsivos */
+        @media (max-width: 600px) {
+
+            /* Cambios para dispositivos móviles */
+            .card {
+                width: 90%;
+                margin: 10px auto;
+            }
+
+            nav {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            nav a {
+                font-size: 18px;
+                padding: 12px;
+            }
+
+            header {
+                padding: 10px 0;
+            }
+        }
     </style>
 </head>
 
@@ -153,7 +169,7 @@
         <h1>The Witcher</h1>
         <nav>
             <a href="./index.html">Inicio</a>
-            <a href="./galeria.html">Galería de Imagenes</a>
+            <a href="./galeria.html">Galería</a>
             <a href="./multimedia.html">Multimedia</a>
             <a href="./registro.html">Registro</a>
         </nav>
