@@ -22,7 +22,7 @@
             left: 0;
             color: #fff;
             width: 100%;
-            height: 210px;
+            height: 250px;
             text-align: center;
             padding: 60px 0;
             overflow: hidden;
@@ -35,7 +35,7 @@
             justify-content: center;
             padding: 10px;
             text-align: flex;
-            }
+        }
 
         nav a {
             font-size: 15px;
@@ -74,24 +74,34 @@
         }
 
         /* Estilo para el contenido principal */
-        
+
         .main-content {
             padding: 120px 20px 20px;
             /* Espacio superior para compensar la barra de navegación fija */
             display: flex;
             flex-wrap: wrap;
-            justify-content: center;
-            margin-bottom: 20px;
+            justify-content: space-around;
+            gap: 20px;
+            padding: 20px;
         }
 
         /* Estilo para las tarjetas */
         .card {
+            width: 200px;
             background-color: #252424;
             border: 1px solid #968f2c;
             border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             padding: 15px;
-            width: 200px;
             margin: 10px;
+            overflow: hidden;
+            position: relative;
+            transition: transform 0.3s ease-in-out;
+            cursor: pointer;
+        }
+
+        .card:hover {
+            transform: translateY(-12px);
         }
 
         /* Estilo para imágenes */
@@ -102,6 +112,35 @@
         }
 
         /* Estilo para títulos de las tarjetas*/
+        .content:hover {
+            background-color: #363636ef;
+        }
+
+        .content h3 {
+            margin-top: 0;
+            transition: color 0.3s;
+        }
+
+        .content:hover h3 {
+            color: #c98a02;
+        }
+        
+        .content p {
+            margin-bottom: 10px;
+        }
+        
+        .description {
+            color: #c2bdb4;
+            font-size: 14px;
+            margin-top: -10px;
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+
+        .card:hover .description {
+            opacity: 1;
+        }
+
         h3 {
             font-family: 'Thewitcher', Helvetica, Arial, sans-serif;
             font-size: 24px;
@@ -178,21 +217,28 @@
         <!--<h1>Contenido Principal</h1>-->
         <div class="card">
             <img src="./imagenes/the_witcher_1_320.jpg" alt="The Witcher 1">
-            <h3>The Witcher 1 Enhanced Edition</h3>
-            <p>The Witcher tiene lugar en un mundo fantástico medieval y relata la historia de Geralt de Rivia.</p>
-            <a href="#">Ver más</a>
+            <div class="content">
+                <h3>The Witcher 1 Enhanced Edition</h3>
+                <p class="description">The Witcher tiene lugar en un mundo fantástico medieval y relata la historia de Geralt de Rivia.</p>
+                <a href="#">Ver más</a>
+            </div>
         </div>
         <div class="card">
             <img src="./imagenes/the_witcher_2_320.jpg" alt="The Witcher 2">
-            <h3>The Witcher 2 Assassins of Kings</h3>
-            <p>Geralt es interrogado acerca del asesinato del rey de Temeria, Foltest.</p>
-            <a href="#">Ver más</a>
+            <div class="content">
+                <h3>The Witcher 2 Assassins of Kings</h3>
+                <p class="description">Geralt es interrogado acerca del asesinato del rey de Temeria, Foltest.</p>
+                <a href="#">Ver más</a>
+            </div>
         </div>
         <div class="card">
             <img src="./imagenes/the_witcher_3_320.jpg" alt="The Witcher 3">
-            <h3>The Witcher 3 Wild Hunt</h3>
-            <p>Geralt recibe una carta de su amante Yennefer diciendo que necesita localizarlo lo antes posible.</p>
-            <a href="#">Ver más</a>
+            <div class="content">
+                <h3>The Witcher 3 Wild Hunt</h3>
+                <p class="description">Geralt recibe una carta de su amante Yennefer diciendo que necesita localizarlo lo antes posible.
+                </p>
+                <a href="#">Ver más</a>
+            </div>
         </div>
         <p>The Witcher es una serie de videojuegos de rol de acción y fantasía desarrollados por CD Projekt RED,
             basados
